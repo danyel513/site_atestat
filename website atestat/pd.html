@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Website Title -->
+    <title>PROBLEME INFORMATICA</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- logo -->
+    <link rel="icon" href="images/LIMBAJUL C++.png">
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Text Logo -->
+             <a class="navbar-brand logo-text page-scroll" href="index.html">PROBLEME INFORMATICA</a>
+
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="sdc.html">SIRURI DE CARACTERE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="recursivitate.html">RECURSIVITATE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="subprograme.html">SUBPROGRAME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="lcf.html">LUCRU CU FISIERE</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->          
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll"  id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">FOLOSITOARE</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="back.html"><span class="item-text">METODA BACKTRACKING</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="greedy.html"><span class="item-text">METODA GREEDY</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="pd.html"><span class="item-text">PROGRAMARE DINAMICA</span></a>
+                            
+                            
+                        </div>
+                    </li>
+                    <!-- end of dropdown menu -->
+
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="quiz.html">QUIZ</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>PROGRAMARE DINAMICA</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Introducere in programarea dinamica</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+
+    <!-- Terms Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h3>Notiuni de baza. Introducere.</h3>
+                        <p>Programarea dinamică este o metodă de rezolvare a unor probleme de informatică în care se cere de regulă determinarea unei valori maxime sau minime, sau numărarea elementelor unei mulțimi.</p>
+                        <p>Similar cu metoda Divide et Impera, problema se împarte în subprobleme:</p>
+                        <ul>
+                            <li>
+                                de aceeași natură cu problema inițială;
+                            </li>
+                            <li>
+                                de dimensiuni mai mici;
+                            </li>
+                            <li>
+                                spre deosebire de Divide et Impera, problemele nu mai sunt independente, ci se suprapun - probleme superpozabile!
+                            </li>
+                            <li>
+                                rezolvarea optimă a problemei inițiale depinde de rezolvarea optimă a subproblemelor - principiul optimalității!
+                            </li>
+                        </ul>
+                        <br><br>
+                        <h3>
+                            EXEMPLU:
+                        </h3>
+                        <p>
+                        <br> Se dă o scară cu N trepte. Un individ se află în partea de jos a scării și poate să urce câte o treaptă la un pas, sau câte două trepte la un pas. În câte moduri poate urca scara?
+<br><br>
+<b>Exemplu:</b> Observăm că dacă scara are o treaptă, ea poate fi urcată într-un singur mod, iar dacă are două trepte, sunt două modalități de a urca scara: doi pași de o treaptă sau un un pas de două trepte. Pentru N=4, scara poate fi urcată în 5 moduri:
+<br><br>
+1 1 1 1<br>
+1 1 2<br>
+1 2 1<br>
+2 1 1<br>
+2 2<br>
+                        </p>
+                        <p>
+                            <b>Rezolvare: </b> Este o problemă de numărare; dacă numerotăm treptele, observăm că pe treapta N se poate ajunge de pe treapta N-1 (cu un pas de o treaptă) sau de pe treapta N-2 (cu un pas de două trepte), cazurile N=1 și N=2 fiind particulare. Atunci, numărul de variate de a urca N trepte este egal cu numărul de variante de a urca N-1 trepte, plus numărul de variante de a urca N-2 trepte. Deducem deci următoarea relație de recurență, în care T(n) reprezintă numărul de modalități de a urca o scară cu n trepte:
+                        <br>
+                        <br>
+                        T(n) = 1, daca n=1;
+                        <br> 
+                        T(n) = 2, daca n=2;
+                        <br> 
+                        T(n) = T(n-1)+T(n-2), daca n>2;
+
+                        <br><br>
+
+                        Constatăm că formula anterioară respectă proprietățile descrise mai sus pentru probleme rezolvabile prin programare dinamică: subprobleme de același tip, de dimensiuni mai mici și care se suprapun; în determinarea lui T(n) intervine T(n-1) și T(n-2). În determinarea lui T(n-1) apare din nou T(n−2), ș.a.m.d., situație care face ca utilizarea recursivității să fie foarte ineficientă.
+<br><br>
+De fapt, putem observa că formula de mai sus este de fapt definiția șirului lui Fibonacci, despre care am văzut deja că are o soluție de complexitate O(n), construind termenii în ordine crescătoare, folosind eventual un tablou unidimensional (sau doar trei variabile simple).
+<br><br>
+Determinarea relației de recurență este o caracteristică a programării dinamice, și una dintre dificultățile principale în rezolvarea problemei. Capacitatea de a identica relațiile de recurență - și deci de a rezolva problema - se dezvoltă treptat, prin rezolvarea de probleme.
+<br><br>
+Odată identificată relația de recurență, este necesară stabilirea unui algoritm de rezolvare a recurenței. Datorită suprapunerii subproblemelor, utilizarea recursivității este foarte neeficientă. De regulă se folosește o structură de date suplimentară - tablou unidimensional, bidimensional sau cu mai multe dimensiuni (în funcție de numărul variabilelor care intervin în relația de recurență).
+<br><br>
+Soluția problemei se află într-un element al tabloului sau se poate determina folosind o parte a elementelor acestuia. Elementele tabloului se vor determina unul câte unul, până când sunt determinate toate elementele necesare pentru aflarea soluției!
+<br><br>
+Pentru problema scării, notăm tabloul necesar cu V[]. Este un tablou unidimensional deoarece în relația de recurență apare o singură variabilă (n); formula recursivă devine:
+                            <ul>
+                                <li>
+                                    V[1] = 1, V[2]=2; 
+                                </li>
+                                <li>
+                                    V[n] = V[n-1] + V[n-2], pentru n>2;
+                                </li>
+                            </ul>
+                            <br>
+                            Inițializăm primele două elemente ale tabloului, iar celelalte elemente vor fi construite unul după altul, de la stânga spre dreapta. Rezultatul se va găsi în V[n].
+<xmp>
+    V[1] = 1, V[2] = 2;
+    for(int i = 3 ; i <= n ; i ++)
+        V[n] = V[n-1] + V[n-2];
+    cout << V[n];   
+</xmp>
+Metoda folosită mai sus pentru rezolvarea recurenței se numește bottom-up. Tabloul se construiește “de jos în sus”, element cu element, până la cel căutat. Toate elementele tabloului au fost completate cu valori.
+<br><br>
+O altă metodă de rezolvare a recurenței este top-down, “de sus în jos”. Metoda folosește recursivitatea, dar, pentru a evita rezolvarea de mai multe ori a subproblemelor, folosește memoizarea: soluția fiecărei subprobleme rezolvate este memorată într-un tablou și când trebuie să rezolvăm aceeași subproblemă cunoaștem deja soluția!
+<br><br>
+Următoarea secvență rezolvă problema scării (șirul lui Fibonacci) folosind memoizarea:
+<xmp>
+    long long V[100];
+
+    long long T(int n)
+    {
+        if(V[n] != 0)
+            return V[n];        
+        if(n < 3)
+            V[n] = n;
+        else
+            V[n] = T(n-1) + T(n-2);
+        return V[n];
+    }    
+</xmp>
+                        </p>
+
+                    </div> <!-- end of text-container -->
+                    
+                    <div class="text-container">
+                        <div class="row">
+                        <div class="col-lg-6 col-xl-5">
+                        <h3>Concluzii</h3>
+                        <br>
+                        <ul>
+                            <li>o problemă se rezolvă prin metoda programării dinamice dacă se poate descompune în subprobleme superpozabile și care respectă principiul optimalității;</li>
+                            <li>se identifică relația de recurență pentru subprobleme și structura de date ajutătoare;</li>
+                            <li>
+                                se rezolvă recurența, folosind metoda bottom-up sau top-down.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <div class="img-wrapper">
+                                <img class="img-fluid" src="images/pd-1.png" alt="alternative">
+                            </div> <!-- end of img-wrapper -->
+                        </div> <!-- end of image-container -->
+                    </div>
+                </div>
+                    </div> <!-- end of text-container -->
+
+                    
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic -->
+    <!-- end of terms content -->
+
+    
+    
+
+<!-- Footer -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#4da1ef;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-col first">
+                    <h4>Despre site:</h4>
+                    <p class="p-small">Realizat cu îndrumarea doamnelor profesoare de la liceul "Atanasie Marienescu" din Lipova.</p>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-md-4">
+                <div class="footer-col middle">
+                    <h4>Important Links</h4>
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Site-ul liceului <a class="white" href="http://www.lamlipova.ro/">www.lamlipova.ro</a></div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-md-4">
+                <div class="footer-col last">
+                    <h4>Contact</h4>
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <li class="media">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="media-body">286, strada Soimos, Lipova, Arad, ROMANIA</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-envelope"></i>
+                            <div class="media-body"><a class="white" href="mailto:daniel.ben.cotoc@gmail.com">daniel.ben.cotoc@gmail.com</a> </div>
+                        </li>
+                    </ul>
+                </div> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of footer -->  
+<!-- end of footer -->
+
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

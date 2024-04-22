@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    
+        <!-- Website Title -->
+        <title>PROBLEME INFORMATICA</title>
+        
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        
+        <!-- logo -->
+        <link rel="icon" href="images/LIMBAJUL C++.png">
+    </head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Text Logo -->
+             <a class="navbar-brand logo-text page-scroll" href="index.html">PROBLEME INFORMATICA</a>
+
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="sdc.html">SIRURI DE CARACTERE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="recursivitate.html">RECURSIVITATE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="subprograme.html">SUBPROGRAME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="lcf.html">LUCRU CU FISIERE</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->          
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll"  id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">FOLOSITOARE</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="back.html"><span class="item-text">METODA BACKTRACKING</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="greedy.html"><span class="item-text">METODA GREEDY</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="pd.html"><span class="item-text">PROGRAMARE DINAMICA</span></a>
+                            
+                            
+                        </div>
+                    </li>
+                    <!-- end of dropdown menu -->
+
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="quiz.html">QUIZ</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>METODA BACKTRACKING</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Metoda BACKTRACKING: Introducere. Notiuni de teorie. Exemple</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+
+    <!-- Privacy Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="image-container-large">
+                        <img class="img-fluid" src="images/bt-1.png" alt="alternative">
+                    </div> <!-- end of image-container-large -->
+                    <div class="text-container">
+                        <h3>Introducere. Notiuni de baza despre BACKTRAKING</h3>
+                        <p>Metoda backtracking poate fi aplicată în rezolvarea problemelor care respectă următoarele condiții:</p>
+                        <ul>
+                            <li> soluția poate fi reprezentată printr-un tablou x[]=(x[1], x[2], ..., x[n]), fiecare element x[i] aparținând unei mulțimi cunoscute A <sub>i</sub>;</li>
+                            <li> fiecare mulțime A<sub>i</sub> este finită, iar elementele ei se află într-o relație de ordine precizată - de multe ori cele n mulțimi sunt identice;</li>
+                            <li> se cer toate soluțiile problemei sau se cere o anumită soluție care nu poate fi determinată într-un alt mod (de regulă mai rapid).</li>
+                        </ul>
+                        <p>Algoritmul de tip backtracking construiește vectorul x[] (numit vector soluție) astfel:
+                            <br><br>
+                            Fiecare pas k, începând (de regulă) de la pasul 1, se prelucrează elementul curent x[k] al vectorului soluție:
+                            <br>
+                        </p>
+                        <ul>
+                    <li> x[k] primește pe rând valori din mulțimea corespunzătoare A<sub>k</sub>;</li>
+                    <li> la fiecare pas se verifică dacă configurația curentă a vectorului soluție poate duce la o soluție finală - dacă valoarea lui x[k] este corectă în raport cu x[1], x[2], … x[k-1]:
+                        <ul>
+                            <li> dacă valoarea nu este corectă, elementul curent X[k] primește următoarea valoare din Ak sau revenim la elementul anterior x[k-1], dacă X[k] a primit toate valorile din A<sub>k</sub> - pas înapoi;</li>
+                            <li> dacă valoarea lui x[k] este corectă (avem o soluție parțială), se verifică existența unei soluții finale a problemei:
+                                <ul>
+                                    <li> dacă configurația curentă a vectorului soluție x reprezintă soluție finală (de regulă) o afișăm;</li>
+                                    <li> dacă nu am identificat o soluție finală trecem la următorul element, x[k+1], și reluăm procesul pentru acest element – pas înainte.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    </ul>
+                    <p> Pe măsură ce se construiește, vectorul soluție x[] reprezintă o soluție parțială a problemei. Când vectorul soluție este complet construit, avem o soluție finală a problemei.</p>
+                        
+                    </div> <!-- end of text-container-->
+                    
+                    <div class="text-container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Exemplu</h3>
+                                <p>Să rezolvăm următoarea problemă folosind metoda backtracking, “cu creionul pe hârtie”: Să se afișeze permutările mulțimii {1, 2, 3}.</p>
+                                <p>Ne amintim că un șir de numere reprezintă o permutare a unei mulțimi M dacă și numai dacă conține fiecare element al mulțimii M o singură dată. Altfel spus, în cazul nostru:</p>
+                                <ul>
+                                    <li> are exact 3 elemente;</li>
+                                    <li> fiecare element este cuprins intre 1 si 3;</li>
+                                    <li> elementul nu se repeta.</li>
+                                </ul>
+                                <p>Pentru a rezolva problemă vom scrie pe rând valori din mulțimea dată și vom verifica la fiecare pas dacă valorile scrise duc la o permutare corectă:</p>
+                            </div> <!-- end of col -->
+                            <div class="col-md-6">
+                                <div class="image-container-small">
+                                    <img class="img-fluid" src="images/bt-2.png" alt="alternative">
+                                </div> <!-- end of image-container-small -->
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                        <br>
+                        <br>
+                        <table id="customers">
+                            <tr>
+                              <th>K</th>
+                              <th>X[ ]</th>
+                              <th>OBSERVATII</th>
+                            </tr>
+                            <tr>
+                              <td> 1 &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                              <td> 1 - - </td>
+                              <td> Corect, pas inainte.</td>
+                            </tr>
+                            <tr>
+                              <td> &nbsp;&nbsp; 2 &nbsp;&nbsp; </td>
+                              <td> 1 1 -</td>
+                              <td> GRESIT</td>
+                            </tr>
+                            <tr>
+                              <td> &nbsp;&nbsp; 2 &nbsp;&nbsp;</td>
+                              <td> 1 2 -</td>
+                              <td> Corect, pas inainte.</td>
+                            </tr>
+                            <tr>
+                              <td> &nbsp; &nbsp;&nbsp;&nbsp; 3</td>
+                              <td> 1 2 1</td>
+                              <td> GRESIT</td>
+                            </tr>
+                            <tr>
+                              <td> &nbsp; &nbsp;&nbsp;&nbsp; 3</td>
+                              <td> 1 2 2 </td>
+                              <td> GRESIT</td>
+                            </tr>
+                            <tr>
+                              <td> &nbsp; &nbsp;&nbsp;&nbsp; 3</td>
+                              <td> 1 2 3</td>
+                              <td> Solutie finala 1.</td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp; 3 </td>
+                                <td> 1 2 !! </td>
+                                <td> am terminat valorile posibile pentru x [ 3 ], pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp;  2   </td>
+                                <td> 1 3 -</td>
+                                <td> corect, pas înainte </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  3 </td>
+                                <td> 1 3 1</td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp; 3 </td>
+                                <td> 1 3 2</td>
+                                <td> soluție finală 2 </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  3</td>
+                                <td> 1 3 3 </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp; 3 </td>
+                                <td> 1 3 !! </td>
+                                <td> am terminat valorile posibile pentru x[ 3 ], pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  2 </td>
+                                <td> 1 !! !!</td>
+                                <td> am terminat valorile posibile pentru x[ 2 ], pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td> 1</td>
+                                <td> 2 - -     </td>
+                                <td> corect, pas înainte </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp;   2 </td>
+                                <td> 2 1 - </td>
+                                <td> corect, pas înainte </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp; 3 </td>
+                                <td> 2 1 1 </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  3 </td>
+                                <td> 2 1 2</td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  3 </td>
+                                <td> 2 1 3</td>
+                                <td> soluție finală 3 </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp; 3 </td>
+                                <td> 2 1 !!  </td>
+                                <td> am terminat valorile posibile pentru x[ 3 ], pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp;  2  </td>
+                                <td> 2 2 -  </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; 2 </td>
+                                <td> 2 3 -  </td>
+                                <td> corect, pas înainte </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  3 </td>
+                                <td> 2 3 1</td>
+                                <td> soluție finală 4 </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  3 </td>
+                                <td> 2 3 2 </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  3 </td>
+                                <td> 2 3 3 </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;  3 </td>
+                                <td> 2 3 !  </td>
+                                <td> am terminat valorile posibile pentru x[ 3 ], pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td>  &nbsp;&nbsp;  2   </td>
+                                <td> <span class="bkf">2</span> <span class="bkc">!!</span> <span class="bkf">&#8211;</span>   </td>
+                                <td> am terminat valorile posibile pentru <code>x[ 2 ]</code>, pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; 1     </td>
+                                <td> <span class="bkc">3</span> <span class="bkf">&#8211;</span> <span class="bkf">&#8211;</span>     </td>
+                                <td> corect, pas înainte </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;&nbsp;  2 &nbsp;&nbsp;   </td>
+                                <td> <span class="bkf">3</span> <span class="bkc">1</span> <span class="bkf">&#8211;</span>   </td>
+                                <td> corect, pas înainte </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;    3 </td>
+                                <td> <span class="bkf">3</span> <span class="bkf">1</span> <span class="bkc">1</span>   </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;     3 </td>
+                                <td> <span class="bkf">3</span> <span class="bkf">1</span> <span class="bkc">2</span>   </td>
+                                <td> soluție finală 5 </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;     3 </td>
+                                <td> <span class="bkf">3</span> <span class="bkf">1</span> <span class="bkc">3</span>   </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;   3</td>
+                                <td> <span class="bkf">3</span> <span class="bkf">1</span> <span class="bkc">!!</span>   </td>
+                                <td> am terminat valorile posibile pentru x[ 3 ], pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp;   2   </td>
+                                <td> <span class="bkf">3</span> <span class="bkc">2</span> <span class="bkf">&#8211;</span>   </td>
+                                <td> corect, pas înainte </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;   3 </td>
+                                <td> <span class="bkf">3</span> <span class="bkf">2</span> <span class="bkc">1</span>   </td>
+                                <td> soluție finală 6 </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;    3 </td>
+                                <td> <span class="bkf">3</span> <span class="bkf">2</span> <span class="bkc">2</span>   </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;     3 </td>
+                                <td> <span class="bkf">3</span> <span class="bkf">2</span> <span class="bkc">3</span>   </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp; &nbsp;&nbsp;   3  </td>
+                                <td> <span class="bkf">3</span> <span class="bkf">2</span> <span class="bkc">!!</span>   </td>
+                                <td> am terminat valorile posibile pentru  x[ 3 ], pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp;   2   </td>
+                                <td> <span class="bkf">3</span> <span class="bkc">3</span> <span class="bkf">&#8211;</span>   </td>
+                                <td> greșit </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp;&nbsp;   2    </td>
+                                <td> <span class="bkf">3</span> <span class="bkc">!</span> <span class="bkf">&#8211;</span>   </td>
+                                <td> am terminat valorile posibile pentru  x[ 2 ], pas înapoi </td>
+                            </tr>
+                            <tr>
+                                <td> 1    </td>
+                                <td> <span class="bkc">!!</span> <span class="bkf">&#8211;</span> <span class="bkf">&#8211;</span>   </td>
+                                <td> am terminat valorile posibile pentru 
+                                    x[ 1 ], pas înapoi </td>
+                            </tr>
+                          </table>
+                    </div> <!-- end of text-container -->
+
+                    <div class="text-container dark">
+                        <p class="testimonial-text"> Pentru a putea realiza un algoritm backtracking pentru rezolvarea unei probleme trebuie să răspundem la următoarele întrebări: 
+                            <ol>
+                                <li> <b>Ce memorăm în vectorul soluție x[ ]? </b> Uneori răspunsul este direct; de exemplu, la generarea permutărilor vectorul soluție reprezintă o permutare a mulțimii A={1,2,...,n}. În alte situații, vectorul soluție este o reprezentare mai puțin directă a soluției; de exemplu, generarea submulțimilor unei mulțimi folosind vectori caracteristici sau Problema reginelor.</li>
+                                <li>
+                                   <b>Ce valori poate lua fiecare element x[k] vectorului soluție și câte elemente poate avea x[]? </b> Altfel spus, care sunt mulțimile Ak. Vom numi aceste restricții condiții externe. Cu cât condițiile externe sunt mai restrictive (cu cât mulțimile Ak au mai puține elemente), cu atât va fi mai rapid algoritmul!
+                                </li>
+                                <li>
+                                   <b> Ce condiții trebuie să îndeplinească x[k] ca să fie considerat corect? </b> Elementul x[k] a primit o anumită valoare, în conformitate ce condițiile externe. Este ea corectă? Poate conduce la o soluție finală? Aceste condiții se numesc condiții interne și în ele pot să intervină doar x[k] și elementele x[1], x[2], …, x[k-1]. Elementele x[k+1], …, x[n] nu poti apărea în condițiile interne deoarece încă nu au fost generate!!!
+                                </li>
+                                <li>
+                                    <b> Am găsit o soluție finală? </b> Elementul x[k] a primit o valoare conformă cu condițiile externe, care respectă condițiile interne. Am ajuns la soluție finală sau continuăm cu x[k+1]?
+                                </li>
+                            </ol>
+                        </p>
+                    </div> <!-- end of text container -->
+
+                    <div class="text-container last">
+                        <h3>Algoritmul general</h3>
+					    <p>Metoda backtracking poate fi implementată iterativ sau recursiv. În ambele situații se se folosește o structură de deate de tip stivă. În cazul implementării iterative, stiva trebuie gestionată intern în algoritm – ceea ce poate duce la dificulăți în implementăre. În cazul implementării recursive se folosește spațiu de memorie de tip stivă – STACK alocat programului; implementarea recursivă este de regulă mai scurtă și mai ușor de înțeles. Acest articol prezintă implementări recursive ale metodei.</p>
+                        <p>
+                            <br>
+                            <br>
+                            Următorul subprogram recursiv prezintă algoritmul la modul general:
+                            <ul>
+                                <li>
+                                    la fiecare apel BACK(k) se generează valori pentru elementul x[k] al vectorului soluție
+                                </li>
+                                <li>
+                                    instrucțiunea Pentru modelează condițiile externe  
+                                </li>
+                                <li>
+                                    subprogramul OK(k) verifică condițiile interne
+                                </li>
+                                <li>
+                                    subprogramul Solutie(k) verifică dacă configurația curentă a vectorului soluție reprezintă o soluție finală
+                                </li>
+                                <li>
+                                    subprogramul Afisare(k) tratează soluția curentă a problemei - de exemplu o afișează!
+                                </li>
+                            </ul>
+                           
+<xmp>
+    subprogram BACK(k)
+    ┌ pentru fiecare element i din A[k] executa
+    │    x[k] ← i
+    │    ┌ daca OK(k) atunci
+    │    │    ┌ daca Solutie(k) atunci
+    │    │    │    Afisare(k)
+    │    │    │ altfel
+    │    │    │    BACK(k+1)
+    │    │    └■
+    │    └■
+    └■
+sfarsit_subprogram   
+</xmp>
+
+                        </p>
+                        <br><br>
+                        <p>
+                        <h2>
+                            OBSERVATII:
+
+                        </h2>
+                        <ul>
+                            <li>
+                                de cele mai multe ori mulțimile A sunt de forma A={1,2,3,….,n} sau A={1,2,3,….,m} sau A={a,a+1,a+2,….,b} sau o altă formă astfel încât să putem scrie instrucțiunea Pentru conform specificului limbajului de programare folosit – eventual folosind o structură repetitivă de alt tip! Dacă este necesar, trebuie realizate unele transformări încât mulțimile să ajungă la această formă!
+                            </li>
+                            <li>
+                                elementele mulțimii A pot fi in orice ordine. Contează însă ordinea în care le vom parcurge în instrucțiunea Pentru, deoarece în probleme este precizată de obicei o anumită ordine în care trebuie generate soluțiile:
+                            <ul>
+                                <li> dacă parcurgem elementele lui A în ordine crescătoare vom obține soluții în ordine lexicografică;</li>
+                                <li>
+                                    dacă parcurgem elementele lui A în ordine descrescătoare vom obține soluții în ordine invers lexicografică.
+                                </li>
+                            </ul>
+                            </li>
+                            <li>
+                                în anumite probleme determinarea unei soluții finale nu conduce la întreruperea apelurilor recursive. Un exemplu este generarea submulțimilor unei mulțimi. În acest caz algoritmul de mai sus poate fi modificat astfel:
+                            </li>
+<xmp>
+    ┌ daca OK(k) atunci
+    │    ┌ daca Solutie(k) atunci
+    │    │     Afisare(k)
+    │    └■
+    │     BACK(k+1)
+    └■   
+</xmp>
+                        </ul>
+                        <br> Bineînțeles, trebuie să ne asigurăm că apelurile recursive se opresc! <br><br><br><br>
+                        </p>
+                        <h2>
+                            Un exemplu C++, un model BACKTRACKING:
+                        </h2>
+                        <p>
+                            Următoarea secvență C++ oferă un șablon pentru rezolvarea unei probleme oarecare folosind metoda backtracking. Vom considera în continuare următoarele condiții externe: x[k]=A,B, pentru k=1,n. În practică A și B vor avea valori specifice problemei:
+<b>
+
+
+<xmp>
+        #include <fstream>
+        using namespace std;
+        
+        int x[10] ,n;
+        
+        int Solutie(int k){
+            // x[k] verifică condițiile interne
+            // verificare dacă x[] reprezintă o soluție finală
+            return 1; // sau 0
+        }
+        
+        int OK(int k){
+            // verificare conditii interne
+            return 1; // sau 0
+        }
+        
+        void Afisare(int k)
+        {
+            // afișare/prelucrare soluția finală curentă
+        }
+        
+        void Back(int k){
+            for(int i = A ; i <= B ; ++i)
+            {
+                x[k]=i;
+                if( OK(k) )
+                    if(Solutie(k))
+                        Afisare(k);
+                    else
+                        Back(k+1);
+            }
+        }
+        int main(){
+            //citire date de intrare
+            Back(1);
+            return 0;
+        }
+</xmp>
+</b>
+                        <br>
+                        De multe ori condițiile de existență a soluției sunt simple și nu se justifică scrierea unei funcții pentru verificarea lor, ele putând fi verificate direct în funcția Back().
+
+De cele mai multe ori, rezolvarea unei probleme folosind metoda backtracking constă în următoarele:
+<ol>
+    <li>
+        stabilirea semnificației vectorului soluție;  
+    </li>
+    <li>
+        stabilirea condițiilor externe;
+    </li>
+    <li>
+        stabilirea condițiilor interne;
+    </li>
+    <li>
+        stabilirea condițiilor de existența a soluției finale;
+    </li>
+    <li>
+        completarea adecvată a șablonului de mai sus!
+    </li>
+</ol>
+                        </p>
+                    </div> <!-- end of text-container -->
+                    
+                </div> <!-- end of col-->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+
+
+    
+
+    
+    <!-- Footer -->
+    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#4da1ef;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col first">
+                        <h4>Despre site:</h4>
+                        <p class="p-small">Realizat cu îndrumarea doamnelor profesoare de la liceul "Atanasie Marienescu" din Lipova.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Site-ul liceului <a class="white" href="http://www.lamlipova.ro/">www.lamlipova.ro</a></div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">286, strada Soimos, Lipova, Arad, ROMANIA</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="mailto:daniel.ben.cotoc@gmail.com">daniel.ben.cotoc@gmail.com</a> </div>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

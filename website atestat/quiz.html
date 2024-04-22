@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBLEME INFORMATICA</title>
+    <link rel="stylesheet" href="css//style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+	<style>
+        .button {
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: none;
+          color: #4da1ef;
+          text-align: center;
+          font-size: 25px;
+          padding: 10px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+          
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        </style>
+	
+</head>
+<body>
+    <br>
+    <br>
+    <a class="button" href="index.html"><span>Home</span></a>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Reguli si observatii in rezolvarea quiz-ului</span></div>
+        <div class="info-list">
+            <div class="info">1. Vei avea la dispozitie <span>15 secunde</span> pentru a raspunde la fiecare intrebare.</div>
+            <div class="info">2. Poti selecta un singur raspuns.</div>
+            <div class="info">3. Nu vei mai putea selecta un raspuns daca s-a scurs timpul.</div>
+            <div class="info">4. Nu poti parasi quiz-ul odata ce l-ai inceput, acesta trebuie rezolvat pana la ultima intrebare.</div>
+            <div class="info">5. Vei primi puncte pe baza raspunsurilor corecte.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Iesi</button>
+            <button class="restart">Continua</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz informatica :)</div>
+            <div class="timer">
+                <div class="time_left_txt">Timp ramas</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                
+            </div>
+            <div class="option_list">
+                
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+               
+            </div>
+            <button class="next_btn">Urmatoarea intrebare</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Ai ajuns la finalul intrebarilor!</div>
+        <div class="score_text">
+           
+        </div>
+        <div class="buttons">
+            <button class="restart">Rezolva din nou </button>
+            <button class="quit">Iesi</button>
+        </div>
+    </div> 
+
+   <!--java scripts-->
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+ 
+
+</body>
+</html>
